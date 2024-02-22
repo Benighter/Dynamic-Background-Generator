@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dynamic Background Generator</title>
+  <script src="popup.js"></script>
+</head>
+<body>
+  <h1>Preferences</h1>
+  <label for="colorPicker">Choose background color:</label>
+  <input type="color" id="colorPicker" value="#ffffff">
+  <br>
+  <label for="backgroundType">Choose background type:</label>
+  <select id="backgroundType">
+    <option value="color">Solid Color</option>
+    <option value="gradient">Gradient</option>
+    <option value="image">Image</option>
+  </select>
+  <br>
+  <div id="imageUploadDiv" style="display:none;">
+    <label for="imageUpload">Upload your own image:</label>
+    <input type="file" id="imageUpload" accept="image/*">
+  </div>
+  <br>
+  <button id="applyButton">Apply Background</button>
+</body>
+</html>
